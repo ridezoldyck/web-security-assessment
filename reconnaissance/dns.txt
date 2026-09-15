@@ -1,0 +1,20 @@
+# DNS Reconnaissance — Lily Style
+
+Target: lilystyle.my.id
+
+Commands:
+nslookup lilystyle.my.id
+dig lilystyle.my.id
+
+Observed A records:
+172.67.221.133
+104.21.25.4
+
+The target is behind Cloudflare based on the observed DNS/IP configuration and HTTP response headers.
+
+Notes:
+- IP tersebut merupakan IP Cloudflare, bukan bukti langsung IP origin server.
+- Origin server tidak disimpulkan dari hasil ini.
+- IPv6 Cloudflare juga teramati pada DNS lookup.
+
+Assessment date: September 2026

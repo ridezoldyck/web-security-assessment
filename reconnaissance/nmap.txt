@@ -1,0 +1,27 @@
+# Nmap Reconnaissance — Lily Style
+
+Target: lilystyle.my.id
+
+## Basic Scan
+Command:
+nmap lilystyle.my.id
+
+Observed:
+80/tcp    open      http
+443/tcp   open      https
+8080/tcp  open      http-proxy
+8443/tcp  open      https-alt
+996/tcp   filtered  unknown
+
+## Service Detection
+Command:
+nmap -sV -p 80,443 lilystyle.my.id
+
+Observed:
+80/tcp    open  http       Cloudflare http proxy
+443/tcp   open  ssl/http   Cloudflare http proxy
+
+## Notes
+Target berada di belakang Cloudflare. Hasil port/service dari internet dapat merepresentasikan edge/proxy Cloudflare dan tidak boleh langsung dianggap sebagai port origin server.
+
+Assessment date: September 2026
