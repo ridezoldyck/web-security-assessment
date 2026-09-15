@@ -50,24 +50,5 @@ Reconnaissance → Information Gathering → Endpoint Mapping → Security Confi
 ## Batasan
 Tidak melakukan database extraction, modifikasi/penghapusan data pengguna lain, brute force, DDoS, malware deployment, social engineering, atau pengujian sistem pihak ketiga.
 
-## Struktur
-```text
-web-security-assessment-lilystyle/
-├── README.md
-├── scope.md
-├── reconnaissance/
-│   ├── dns.txt
-│   └── nmap.txt
-├── findings/
-│   ├── finding-01-sqli.md
-│   ├── finding-02-php-disclosure.md
-│   ├── finding-03-session-cookie.md
-│   ├── finding-04-error-disclosure.md
-│   ├── finding-05-security-headers.md
-│   └── finding-06-invalid-id.md
-└── screenshots/
-    └── README.md
-```
-
 ## Disclaimer
 Dokumentasi ini untuk pembelajaran dan portfolio cybersecurity. Pengujian hanya boleh dilakukan pada sistem yang dimiliki atau telah memberikan izin.
